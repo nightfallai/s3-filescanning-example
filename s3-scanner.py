@@ -1,5 +1,4 @@
 import os
-from tracemalloc import start
 from nightfall import Confidence, DetectionRule, Detector, RedactionConfig, MaskConfig, AlertConfig, WebhookAlert, SlackAlert, EmailAlert, Nightfall
 from os import mkdir, walk
 import json
