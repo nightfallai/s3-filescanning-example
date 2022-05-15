@@ -27,13 +27,11 @@ pip install -r requirements.txt
 
 3. Get S3 details. You'll need your AWS Access Key ID and Secret Access Key for the next step.
 
-4. Set your environment variables: your Nightfall API key, your Nightfall signing secret, your Nightfall [detection rule UUIDs](https://docs.nightfall.ai/docs/creating-detection-rules) (from earlier step), your webhook server URL from ngrok, and your GitHub or GitLab details (from earlier step).
+4. Set your environment variables: your Nightfall API key, your Nightfall [detection rule UUIDs](https://docs.nightfall.ai/docs/creating-detection-rules) (from earlier step), your desired alert email address, and your S3 details (from earlier step).
 
 ```bash
 export NIGHTFALL_API_KEY=<your key here>
-export NIGHTFALL_SIGNING_SECRET=<your secret here>
 export NIGHTFALL_DETECTION_RULE_UUIDS=<comma separated list of your detection rule uuids>
-export NIGHTFALL_SERVER_URL=https://<your server subdomain>.ngrok.io
 export AWS_ACCESS_KEY_ID=<your key id here>
 export AWS_SECRET_ACCESS_KEY=<your secret access key here>
 export ALERT_EMAIL_ADDRESS=<your desired email address to have alerts sent>
