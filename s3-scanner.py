@@ -43,6 +43,7 @@ def download_all_objects(dir):
 					print(filepath)
 					bucket.download_file(obj.key, filepath)
 					scan_object(filepath)
+					os.remove(filepath) # This will remove the file from directory upon scan completion to help manage memory constraints
 
 # send s3 object to Nightfall to be scanned
 def scan_object(filepath):
